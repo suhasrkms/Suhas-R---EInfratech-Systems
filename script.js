@@ -19,6 +19,9 @@ function todoManager() {
             <button class="btn btn-warning rounded-circle ml-2" onclick="editTask(${index})">
               <i class="bi bi-pencil"></i>
             </button>
+            <button class="btn btn-danger rounded-circle ml-2" onclick="deleteTask(${index})">
+              <i class="bi bi-trash"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -48,20 +51,17 @@ document
     }
   });
 
-// btn toogling for complterd
 function toggleComplete(index) {
   tasks[index].completed = !tasks[index].completed;
   const taskCard = document.querySelector(`[data-task-id="${index}"]`);
   const toggleButton = taskCard.querySelector(".btn-success, .btn-danger");
 
   if (tasks[index].completed) {
-    //green tick
     taskCard.classList.add("card-complete");
     toggleButton.innerHTML = '<i class="bi bi-x-lg"></i>';
     toggleButton.classList.remove("btn-success");
     toggleButton.classList.add("btn-danger");
   } else {
-    //red tick
     taskCard.classList.remove("card-complete");
     toggleButton.innerHTML = '<i class="bi bi-check-lg"></i>';
     toggleButton.classList.remove("btn-danger");
@@ -69,7 +69,6 @@ function toggleComplete(index) {
   }
 }
 
-//edot task
 function editTask(index) {
   const task = tasks[index];
   const taskInput = document.getElementById("toDOText");
@@ -78,6 +77,11 @@ function editTask(index) {
   const modalTitle = document.getElementById("exampleModalLabel");
   modalTitle.textContent = "Edit Task";
   $("#exampleModal").modal("show");
+}
+
+function deleteTask(index) {
+  tasks.splice(index, 1); // Removes the task from the array
+  todoManager(); // Re-render the tasks
 }
 
 todoManager();
