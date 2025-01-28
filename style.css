@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://unsplash.it/1920/1080?random");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+}
+
+.card {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.8rem;
+}
+
+.card-complete {
+  background-color: rgba(41, 223, 24, 0.9);
+  text-decoration: line-through;
+}
