@@ -1,0 +1,15 @@
+.time-unit {
+  font-weight: bold;
+  font-family: monospace;
+  color: #212529;
+}
+
+.time-label {
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.control-btn {
+  transition: all 0.3s ease;
+}

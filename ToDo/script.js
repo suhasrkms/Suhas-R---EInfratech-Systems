@@ -80,8 +80,8 @@ function editTask(index) {
 }
 
 function deleteTask(index) {
-  tasks.splice(index, 1); // Removes the task from the array
-  todoManager(); // Re-render the tasks
+  tasks.splice(index, 1);
+  todoManager();
 }
 
 todoManager();
