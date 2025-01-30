@@ -56,12 +56,12 @@ function incrementTime() {
 }
 
 function updateDisplay() {
-  display.mseconds.textContent = pad(mseconds);
-  display.seconds.textContent = pad(seconds);
-  display.minutes.textContent = pad(minutes);
-  display.hours.textContent = pad(hours);
+  display.mseconds.textContent = paddingfun(mseconds);
+  display.seconds.textContent = paddingfun(seconds);
+  display.minutes.textContent = paddingfun(minutes);
+  display.hours.textContent = paddingfun(hours);
 }
 
-function pad(number) {
+function paddingfun(number) {
   return number.toString().padStart(2, "0");
 }

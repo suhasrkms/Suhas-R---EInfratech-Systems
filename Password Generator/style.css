@@ -1,0 +1,8 @@
+body {
+  min-height: 100dvh;
+}
+
+.password-display {
+  font-family: monospace;
+  font-size: 1.2rem;
+}
