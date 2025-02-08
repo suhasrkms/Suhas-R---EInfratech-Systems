@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Sans", serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #fff; /* Replaced var(--white) */
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1); /* Add bottom shadow */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #343a40 !important; /* Replaced var(--dark) */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important; /* Replaced var(--yellow) */
+}
+
+.navbar.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  background-color: #6c757d; /* Replaced var(--secondary) */
+}
+
+.dropdown-item {
+  color: #fff; /* Replaced var(--white) */
+}
+
+.dropdown-item:hover {
+  background-color: #dc3545; /* Replaced var(--danger) */
+  color: #fff; /* Replaced var(--white) */
+}
+
+.hero-img {
+  background-image: url("https://www.nuvolo.com/wp-content/uploads/2020/10/hero-pattern.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Full width of the parent div */
+  height: 100%; /* Full height of the parent div */
+}
+
+.display-4-5 {
+  font-size: 3.75rem; /* Adjust this value to your desired size */
+}
+
+.case-study {
+  background-color: rgb(16, 52, 100); /* Solid blue background */
+  padding: 3rem 0;
+}
+
+.logo-description {
+  padding: 55px 0 60px;
+  background: #0c3660; /* Same as var(--primary) */
+  color: #fff; /* White text */
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 30;
+}
+
+.covered {
+  background: #f6f5fa; /* Same as var(--primary) */
+  margin: 8%;
+}
+
+.covered container {
+  min-height: 40vh;
+  background: #103464;
+  margin: 60px 0px 60px 70px;
+}
+
+.covered .col {
+  color: rgb(0, 0, 0);
+  min-height: 20vh;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.product-box {
+  text-align: center;
+  opacity: 0; /* Initially hidden for GSAP animation */
+}
+
+.product-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-box h5 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.products {
+  margin: 100px 0;
+}
+
+footer {
+  background-color: #333;
+}
+
+footer .list-unstyled li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .list-unstyled li a:hover {
+  color: #ff6f61; /* Color on hover */
+}
+
+footer .form-group input {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+}
+
+footer .btn {
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #ff6f61;
+  border: none;
+}
+
+footer .btn:hover {
+  background-color: #e25647;
+}
+
+footer .fab {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer .fab:hover {
+  color: #ff6f61; /* Color on hover */
+}

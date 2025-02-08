@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Bootstrap Navbar</title>
+	<!-- Bootstrap 4 CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- FontAwesome (Optional for Icons) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+	<!-- GSAP ScrollTrigger -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light sticky">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="https://einfratechsys.com/img/logoelnfra.jpg" alt="Logo" style="height: 60px;">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#company">Company</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#customers">Customers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container hero" id="home">
+		<span class="hero-img"></span>
+		<div class="row" style="min-height: 80vh;">
+			<!-- Apply left-side-bg to only the left column -->
+			<div class="col-lg-6 col-12 d-flex align-items-center">
+				<div id="box">
+					<h1 class="font-weight-bold" style="font-size: 3rem;">The promise of a fully connected workplace
+					</h1>
+					<p>Workplace management, Built on NOW™</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-12 d-flex align-items-center">
+				<img src="https://einfratechsys.com/img/banner1.png" class="img-fluid" alt="Responsive image">
+			</div>
+		</div>
+	</div>
+
+	<div class="logo-description">
+		<div class="container px-5 text-center">
+			<div class="row align-items-center">
+				<!-- Image on the right -->
+				<div class="col-lg-2 text-lg-right">
+					<img src="https://einfratechsys.com/wp-content/uploads/2021/01/nuvolo-announcement-icon.png"
+						class="rounded mx-auto d-block" alt="...">
+				</div>
+				<div class="col-1"></div>
+				<!-- Text on the left -->
+				<div class="col-lg-8 text-lg-left">
+					<p><b>Verdantix Case Study:</b> Circle K Leverages EInfratech Systems India To Gain a
+						Consolidated
+						View
+						of Facility Operations</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="covered" id="company">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-start p-3 pl-4">
+					<h1 class="text-left font-weight-bold">We've got you covered</h1>
+					<h5 class="text-left">We've worked with clients across industries to make their workplace experience
+						better.</h5>
+				</div>
+
+				<div class="row col-lg-6 col-12 p-3">
+					<div class="col d-flex justify-content-center align-items-center m-4">
+						<img width="40" height="40"
+							src="https://einfratechsys.com/wp-content/uploads/2020/11/compensation.png" class="mr-3">
+						<div>
+							<h1 class="display-5 font-weight-bold number" data-number="1650">0</h1>
+							<!-- Add data-number attribute -->
+							<p class="m-0">Clients Server</p>
+						</div>
+					</div>
+
+					<div class="col d-flex justify-content-center align-items-center m-4">
+						<img width="40" height="40"
+							src="https://einfratechsys.com/wp-content/uploads/2021/04/ot-assets-managed-002.png"
+							class="mr-3">
+						<div>
+							<h1 class="display-5 font-weight-bold number" data-number="1500">0</h1>
+							<!-- Add data-number attribute -->
+							<p class="m-0">OT Assets Managed</p>
+						</div>
+					</div>
+					<div class="w-100"></div>
+					<div class="col d-flex justify-content-center align-items-center m-4">
+						<img width="40" height="40"
+							src="https://einfratechsys.com/wp-content/uploads/2021/04/work-orders-per-mth-002.png"
+							class="mr-3">
+						<div>
+							<h1 class="display-5 font-weight-bold number" data-number="30">0</h1>
+							<!-- Add data-number attribute -->
+							<p class="m-0">Work Orders per Month</p>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center align-items-center m-4">
+						<img width="40" height="40"
+							src="https://einfratechsys.com/wp-content/uploads/2020/10/Improve-Community-4.png"
+							class="mr-3">
+						<div>
+							<h1 class="display-5 font-weight-bold ">24X7</h1>
+							<!-- Add data-number attribute -->
+							<p class="m-0">Global Customer Care</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Products Section -->
+	<section class="products">
+		<div class="container">
+			<div class="product-container">
+				<div class="container text-center">
+					<h1 class="font-weight-bold">Your Next Generation IWMS</h1>
+					<h5>One solution to handle your facilities maintenance, space planning, corporate real estate,
+						capital projects, field
+						service management, and sustainability needs - all while keeping your connected OT assets safe
+						and secure.</h5>
+				</div>
+				<div class="product-box">
+					<img src="https://einfratechsys.com/img/HOMEPAGESPACE.jpg" alt="Product 1" class="product-img">
+					<h5>Connected Workplace</h5>
+				</div>
+				<div class="product-box">
+					<img src="https://einfratechsys.com/img/homepagemaintenance.jpg" alt="Product 2"
+						class="product-img">
+					<h5>Retail</h5>
+				</div>
+				<div class="product-box">
+					<img src="https://einfratechsys.com/img/shutterstock.jpg" alt="Product 3" class="product-img">
+					<h5>Education</h5>
+				</div>
+				<div class="product-box">
+					<img src="https://einfratechsys.com/img/solutions1.jpg" alt="Product 4" class="product-img">
+					<h5>Health Care</h5>
+				</div>
+				<div class="product-box">
+					<img src="https://einfratechsys.com/img/homepageotcyber.jpg" alt="Product 5" class="product-img">
+					<h5>Public Sector</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="what-our-customers-are-saying py-5" style="background-color: #f1f1f1;" id="customers">
+		<div class="container">
+			<h2 class="text-center font-weight-bold mb-5" style="font-size: 2.5rem;">What Our Customers Are Saying</h2>
+			<div class="row">
+				<!-- Testimonial 1 -->
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card shadow-sm border-light rounded-lg testimonial-card">
+						<div class="card-body text-center">
+							<img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Customer 1"
+								class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+							<h5 class="card-title font-weight-bold">John Doe</h5>
+							<p class="card-text">"This service has transformed our workflow! The team is professional
+								and
+								responsive, making our operations smoother."</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Testimonial 2 -->
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card shadow-sm border-light rounded-lg testimonial-card">
+						<div class="card-body text-center">
+							<img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Customer 2"
+								class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+							<h5 class="card-title font-weight-bold">Jane Smith</h5>
+							<p class="card-text">"A fantastic solution for all our needs! Easy to use and integrates
+								seamlessly with our current systems."</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Testimonial 3 -->
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card shadow-sm border-light rounded-lg testimonial-card">
+						<div class="card-body text-center">
+							<img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Customer 3"
+								class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+							<h5 class="card-title font-weight-bold">Robert Brown</h5>
+							<p class="card-text">"I can't imagine working without this platform. It's made our team's
+								collaboration and productivity so much better!"</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="bg-dark text-white py-5" id="contact">
+		<div class="container">
+			<div class="row">
+				<!-- Column 1: Company Info -->
+				<div class="col-md-4 mb-4">
+					<h5 class="font-weight-bold">Company</h5>
+					<p>Connected Workplace isn't industry specific. Whether you're a major healthcare system,
+						convenience store franchise,
+						innovative tech company, or in any other market...we have a solution.</p>
+				</div>
+
+				<!-- Column 2: Quick Links -->
+				<div class="col-md-4 mb-4">
+					<h5 class="font-weight-bold">Quick Links</h5>
+					<ul class="list-unstyled">
+						<li><a href="#" class="text-white">Home</a></li>
+						<li><a href="#" class="text-white">Solutions</a></li>
+						<li><a href="#" class="text-white">Customers</a></li>
+						<li><a href="#" class="text-white">Company</a></li>
+						<li><a href="#" class="text-white">Contact</a></li>
+					</ul>
+				</div>
+
+				<!-- Column 3: Newsletter -->
+				<div class="col-md-4 mb-4">
+					<h5 class="font-weight-bold">Subscribe to our Newsletter</h5>
+					<form action="#" method="post">
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Enter your email" required>
+						</div>
+						<button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Social Media Links (Bottom Row) -->
+			<div class="row">
+				<div class="col-12 text-center mt-4">
+					<h5 class="font-weight-bold">Follow Us</h5>
+					<a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<!-- Bootstrap JS, Popper.js, jQuery (Required for the Bootstrap Navbar to work) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- GSAP Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+
+	<!-- ScrollTrigger Plugin -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollToPlugin.min.js"></script>
+	<script>
+		(function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "HM4HZ5vKsmwUORILyhxn7"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+	</script>
+	<script src="main.js"></script>
+
+
+</body>
+
+</html>
