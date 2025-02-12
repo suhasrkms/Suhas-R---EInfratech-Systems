@@ -1,0 +1,32 @@
+body {
+  /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  color: #fff;
+  min-height: 100dvh;
+  font-family: 'Arial', sans-serif;
+}
+
+.weather-card {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.search-box {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  min-width: 120px;
+}
