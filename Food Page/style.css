@@ -41,6 +41,13 @@ body {
     background-color: #182414;
 }
 
+.new-card{
+    background-color: #fbf2c2; height: 145px;
+}
+.new-card:hover {    
+    background-color: #f59e0b;
+    transform: scale(1.01);
+}
 
 a{
     text-decoration: none;
