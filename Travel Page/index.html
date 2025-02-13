@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Travel Page/about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="hero" id="hero">
+            <div class="hero-overlay">
+                <div class="hero-content col-lg-5 col-12">
+                    <span class="d-inline">
+                    <h1 class="strong">Explore <br> <span class="text-warning">the world</span> <br> with us</h1>
+                    <h6>Discover all the posibilities</h6>
+                    <button type="button" class="btn btn-warning mt-3 rounded">Explore</button></span>
+
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    <div class="container col-lg-8 col-md-10 col-12 mb-5" id="book">
+        <div class="mt-4 p-4  bg-secondary rounded ">
+            <div class="row g-3">
+                <div class="col-sm-3">
+                    <h5 class="text-light">Location</h5>
+                  <input type="text" class="form-control " placeholder="City">
+                </div>
+                
+                <div class="col-sm-4">
+                    <h5 class="text-light">Date</h5>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="text-light">Guest</h5>
+                  <input type="number" class="form-control" placeholder="Guests" >
+                </div>
+                <div class="col-sm-2">
+                    <h5 class="text-light"> &thinsp; </h5>
+                  <input type="submit" class="form-control bg-warning btn-rounded" placeholder="Zip" aria-label="Zip">
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="categories container mb-5">
+        <h4 class="text-center">Travel Categories</h4>
+        <div class="row">
+            <div class="col-lg-1 col-0"></div>          
+
+                <div class="row col-lg-10 col-12 mt-1">
+                    <div class="col-md-4 mt-3">
+                        <div class="category-card">🏖️ Beach Getaway</div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="category-card">⛺ Adventure Time</div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="category-card">🚣 Exotic Trips</div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="category-card">🚢 Cruises</div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="category-card">🚀 Last Minute</div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="category-card">⛰️ Mountains</div>
+                    </div>
+                </div>
+            
+            <div class="col-lg-1 col-0"></div>
+          
+              
+        </div>
+    </div>
+
+    <footer class="footer text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Travel. All Rights Reserved.</p>
+            <p>Follow us on 
+                <a href="#" class="text-white">Facebook</a> | 
+                <a href="#" class="text-white">Twitter</a> | 
+                <a href="#" class="text-white">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+ <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

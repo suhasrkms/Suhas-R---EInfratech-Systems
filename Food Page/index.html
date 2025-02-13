@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Travel Page/about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book">Booking</a></li>
+                    <!-- Sign In Button -->
+                    <li class="nav-item">
+                        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-4 mx-5">
+        <div class="hero" id="hero">
+            <div class="hero-overlay">
+                <div class="hero-content col-lg-8 col-12 p-4 ">
+                    <span class="d-inline">
+                    <h1 class="strong" style="font-size: 4rem;">Fast Food <br>Full Flavour
+                    <h4>Our Commitment to serve fresh food never ends! </h4></h1>
+                    <button type="button" class="btn btn-warning mt-3 rounded">Explore</button></span>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+    <div class="d-flex flex-wrap m-5" >
+        <!-- First full-height card in the left column -->
+        <div class="col-lg-6 col-12 p-2 d-flex flex-column">
+            <div class="card flex-fill text-white">                
+                <div class="" style="background: url('https://images.pexels.com/photos/18867543/pexels-photo-18867543/free-photo-of-burger-served-in-a-restaurant.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover;    height: 300px;   "> 
+                <div class="card-overlay"><h2 class="p-4 pb-0 ">Burger Packs
+                    
+                </h2>
+                <h6 class="p-4 pt-0">View Packs ></h6></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Two stacked cards in the right column -->
+        <div class="col-lg-6 col-12  p-2 d-flex flex-column">
+            <div class="card mb-2" style="background-color: #fbf2c2; height: 145px;">
+                <div class="card-body">
+                  <h4 class="strong">Flavours that Zoom <br>Serive that Booms</h4> 
+
+                  <a href="#"> <h6 class="pt-4 text-dark">VISIT STORE ></h6></a>
+                </div>
+            </div>
+            <div class="card" style="background-color: #fbf2c2; height: 145px;">
+                <div class="card-body">
+                    <h4 class="strong">Flavours in Flash <br>Foody Delight</h4> 
+  
+                    <a href="#"> <h6 class="pt-4 text-dark">VISIT STORE ></h6></a>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Travel. All Rights Reserved.</p>
+            <p>Follow us on 
+                <a href="#" class="text-white">Facebook</a> | 
+                <a href="#" class="text-white">Twitter</a> | 
+                <a href="#" class="text-white">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
